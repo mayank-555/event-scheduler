@@ -1,0 +1,66 @@
+[
+    {
+        "id": "dbcaddd8-4e4f-479a-9e1e-dff2498319c7",
+        "title": "Meeting with Team",
+        "description": "Discuss project timeline",
+        "start_time": "2025-06-29T10:00:00",
+        "end_time": "2025-06-29T11:00:00",
+        "recurrence": "none"
+    },
+    {
+        "id": "ba53ef1a-ad1e-4d0f-9a97-041bc10b591c",
+        "title": "Meeting with Team",
+        "description": "Discuss project timeline",
+        "start_time": "2025-06-29T10:00:00",
+        "end_time": "2025-06-29T11:00:00",
+        "recurrence": "none"
+    },
+    {
+        "id": "4f3a0710-b369-428a-8e80-f2121106c6e5",
+        "title": "Team Meeting",
+        "description": "Sprint planning session",
+        "start_time": "2025-06-30T10:00:00",
+        "end_time": "2025-06-30T11:00:00",
+        "recurrence": "none"
+    },
+    {
+        "id": "8e0da9e8-22e2-48b1-aae0-a80644e0c40a",
+        "title": "Team Meeting",
+        "description": "Sprint planning session",
+        "start_time": "2025-06-30T10:00:00",
+        "end_time": "2025-06-30T11:00:00",
+        "recurrence": "none"
+    },
+    {
+        "id": "00970ed4-278e-43bd-90e0-b3f5978a36e0",
+        "title": "Client Call",
+        "description": "Discuss project progress",
+        "start_time": "2025-06-30T12:00:00",
+        "end_time": "2025-06-30T12:30:00",
+        "recurrence": "none"
+    },
+    {
+        "id": "2a45071e-a9e9-4e95-9eab-2c51935714b8",
+        "title": "Dentist Appointment",
+        "description": "Regular cleaning",
+        "start_time": "2025-06-30T15:00:00",
+        "end_time": "2025-06-30T16:00:00",
+        "recurrence": "none"
+    },
+    {
+        "id": "845eab9f-5641-4e26-a562-74972cf85ec9",
+        "title": "Grocery Shopping",
+        "description": "Buy fruits and veggies",
+        "start_time": "2025-06-30T17:00:00",
+        "end_time": "2025-06-30T18:00:00",
+        "recurrence": "none"
+    },
+    {
+        "id": "1220df01-a246-47f7-89ed-cd40dc288b68",
+        "title": "Yoga Class",
+        "description": "Evening session",
+        "start_time": "2025-06-30T19:00:00",
+        "end_time": "2025-06-30T20:00:00",
+        "recurrence": "none"
+    }
+]
