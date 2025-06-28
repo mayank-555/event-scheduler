@@ -28,7 +28,7 @@ A simple Python Flask-based Event Scheduler backend that allows users to create,
 # 📦 Setup & Installation
 
 # Step 1: Clone the repository
-git clone https://github.com/yourusername/event-scheduler.git
+git clone https://github.com/mayank-555/event-scheduler.git
 cd event-scheduler
 
 # Step 2: Create virtual environment
