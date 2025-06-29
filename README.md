@@ -122,7 +122,13 @@ curl -X POST http://127.0.0.1:5000/events \
   -d '{"title":"Test","description":"Test event","start_time":"2025-07-01T10:00:00","end_time":"2025-07-01T11:00:00"}'
 View events
 curl http://127.0.0.1:5000/events
+
+
 📧 Author
+
+
 Mayank Gupta
+
+
 GitHub: @mayank-555
 
