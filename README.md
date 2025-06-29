@@ -53,15 +53,7 @@ pip install -r requirements.txt
 
 Create a .env file with:
 
-SMTP_SERVER=smtp.gmail.com
-SMTP_PORT=587
-EMAIL_SENDER=your_email@gmail.com
-EMAIL_PASSWORD=your_app_password
-EMAIL_RECEIVER=your_email@gmail.com
-Step 6: Run the application
-
-python app.py
-App will start at: http://127.0.0.1:5000/
+<pre> Create a `.env` file with: ``` SMTP_SERVER=smtp.gmail.com SMTP_PORT=587 EMAIL_SENDER=your_email@gmail.com EMAIL_PASSWORD=your_app_password EMAIL_RECEIVER=your_email@gmail.com ``` Step 6: Run the application ``` python app.py ``` App will start at: [http://127.0.0.1:5000/](http://127.0.0.1:5000/) </pre>
 
 📮 API Endpoints
 1. Create Event
