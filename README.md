@@ -39,14 +39,16 @@ python3 -m venv venv
 
 ### Step 3: Activate virtual environment
 
-source venv/bin/activate   # For Linux or MacOS
+source venv/bin/activate                   # For Linux or MacOS
 # OR
-venv\Scripts\activate       # For Windows
+venv\Scripts\activate                      # For Windows
 
 
 ### Step 4: Install dependencies
 
 pip install -r requirements.txt
+
+
 ### Step 5: Configure environment
 
 Create a .env file with:
