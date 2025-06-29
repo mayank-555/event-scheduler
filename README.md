@@ -103,23 +103,26 @@ Save all requests (POST, GET, PUT, DELETE, SEARCH)
 
 Export → Format: v2.1 → Save as postman_collection.json
 
-🗂 Project Structure
+### 🗂 Project Structure
 
+```
 .
-├── .pytest_cache/              # pytest cache (ignore in Git)
-├── __pycache__/                # Compiled Python cache
-├── Output_Screenshots/         # Screenshots of Postman/API testing
-├── tests/                      # Unit test files (e.g., test_event_scheduler.py)
-├── venv/                       # Python virtual environment (ignore in Git)
-├── .env                        # Gmail SMTP credentials (keep secret!)
-├── app.py                      # Main Flask app with reminder thread
-├── events.json                 # Persistent event storage
-├── notifier.py                 # Email sending logic (Gmail SMTP)
-├── postman_collection.json     # For testing API routes in Postman
-├── README.md                   # Project documentation
-├── requirements.txt            # Python dependencies
-├── test_event_scheduler.py     # Unit tests for scheduler functionality
-├── utils.py                    # Load/save JSON event data
+├── .pytest_cache/             # pytest cache (ignore in Git)
+├── __pycache__/               # Compiled Python cache
+├── Output_Screenshots/        # Screenshots of Postman/API testing
+├── tests/                     # Unit test files (e.g., test_event_scheduler.py)
+├── venv/                      # Python virtual environment (ignore in Git)
+├── .env                       # Gmail SMTP credentials (keep secret!)
+├── app.py                     # Main Flask app with reminder thread
+├── events.json                # Persistent event storage
+├── notifier.py                # Email sending logic (Gmail SMTP)
+├── postman_collection.json    # For testing API routes in Postman
+├── README.md                  # Project documentation
+├── requirements.txt           # Python dependencies
+├── test_event_scheduler.py    # Unit tests for scheduler functionality
+├── utils.py                   # Load/save JSON event data
+```
+
 
 
 ✅ Example Commands (cURL)
