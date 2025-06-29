@@ -29,41 +29,35 @@ A Python Flask-based Event Scheduler backend that allows users to create, view, 
 ## 📦 Setup & Installation
 
 ### Step 1: Clone the repository
-```bash
+
 git clone https://github.com/mayank-555/event-scheduler.git
 cd event-scheduler
-Step 2: Create virtual environment
-bash
-Copy
-Edit
+###  Step 2: Create virtual environment
+
 python3 -m venv venv
-Step 3: Activate virtual environment
-bash
-Copy
-Edit
+
+
+### Step 3: Activate virtual environment
+
 source venv/bin/activate   # For Linux or MacOS
 # OR
 venv\Scripts\activate       # For Windows
-Step 4: Install dependencies
-bash
-Copy
-Edit
+
+
+### Step 4: Install dependencies
+
 pip install -r requirements.txt
-Step 5: Configure environment
+### Step 5: Configure environment
+
 Create a .env file with:
 
-env
-Copy
-Edit
 SMTP_SERVER=smtp.gmail.com
 SMTP_PORT=587
 EMAIL_SENDER=your_email@gmail.com
 EMAIL_PASSWORD=your_app_password
 EMAIL_RECEIVER=your_email@gmail.com
 Step 6: Run the application
-bash
-Copy
-Edit
+
 python app.py
 App will start at: http://127.0.0.1:5000/
 
@@ -71,9 +65,6 @@ App will start at: http://127.0.0.1:5000/
 1. Create Event
 POST /events
 
-json
-Copy
-Edit
 {
   "title": "Team Meeting",
   "description": "Discuss Q3 goals",
@@ -87,9 +78,6 @@ GET /events
 3. Update Event
 PUT /events/<event_id>
 
-json
-Copy
-Edit
 {
   "title": "Updated Title"
 }
@@ -129,16 +117,10 @@ Export → Format: v2.1 → Save as postman_collection.json
 
 ✅ Example Commands (cURL)
 Create event
-bash
-Copy
-Edit
 curl -X POST http://127.0.0.1:5000/events \
   -H "Content-Type: application/json" \
   -d '{"title":"Test","description":"Test event","start_time":"2025-07-01T10:00:00","end_time":"2025-07-01T11:00:00"}'
 View events
-bash
-Copy
-Edit
 curl http://127.0.0.1:5000/events
 📧 Author
 Mayank Gupta
