@@ -62,5 +62,61 @@
         "start_time": "2025-06-30T19:00:00",
         "end_time": "2025-06-30T20:00:00",
         "recurrence": "none"
+    },
+    {
+        "id": "a23cc324-b87c-4e3e-b5cb-7a53d71f9596",
+        "title": "Daily Meditation",
+        "description": "15 mins daily session",
+        "start_time": "2025-06-28T17:00:00",
+        "end_time": "2025-06-28T17:15:00",
+        "recurrence": "daily"
+    },
+    {
+        "id": "f70b9a4e-7086-431a-a0c0-c2b7f25bc1d4",
+        "title": "\u23f0 2-Minute Test",
+        "description": "Testing short-term reminder",
+        "start_time": "2025-06-29T17:02:37",
+        "end_time": "2025-06-29T17:02:39",
+        "recurrence": "daily"
+    },
+    {
+        "id": "f14d2f8f-ba60-4d8b-95c8-16e7d68bba90",
+        "title": "\ud83d\udd01 Test Daily Reminder",
+        "description": "Testing recurrence reminder at 2:43 AM",
+        "start_time": "2025-07-29T02:44:00",
+        "end_time": "2025-07-29T03:00:00",
+        "recurrence": "daily"
+    },
+    {
+        "id": "b9368ba4-313b-41f0-8d18-6950fef16b00",
+        "title": "Test Event",
+        "description": "Testing create endpoint",
+        "start_time": "2025-07-29T02:43:00",
+        "end_time": "2025-07-29T03:43:00",
+        "recurrence": "none"
+    },
+    {
+        "id": "0b05cca3-c148-47f4-b3e2-0ada6e3a05c3",
+        "title": "Updated Title",
+        "description": "Before update",
+        "start_time": "2025-07-29T04:00:00",
+        "end_time": "2025-07-29T05:00:00",
+        "recurrence": "none"
+    },
+    {
+        "id": "a58208ad-530c-480b-941c-953456fb172d",
+        "title": "Daily Standup",
+        "description": "Team call at 10 AM",
+        "start_time": "2025-06-29T13:45:00",
+        "end_time": "2025-06-29T13:48:00",
+        "recurrence": "daily"
+    },
+    {
+        "id": "979a3e52-9aba-4877-adc5-ce31a5024165",
+        "title": "\ud83d\udccc Assignment Reminder - Mayank Gupta",
+        "description": "Daily task check for assignment submission & progress tracking.",
+        "start_time": "2025-06-29T14:10:00",
+        "end_time": "2025-06-29T13:11:00",
+        "recurrence": "daily"
     }
 ]

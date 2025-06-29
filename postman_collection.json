@@ -1,0 +1,122 @@
+{
+	"info": {
+		"_postman_id": "652fc05a-01af-4b2a-8d30-65e58a618800",
+		"name": "Event Scheduler Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31483893"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:5000/events",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Yoga Class\",\r\n  \"description\": \"Evening session\",\r\n  \"start_time\": \"2025-06-30T19:00:00\",\r\n  \"end_time\": \"2025-06-30T20:00:00\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/events",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/events",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/events",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/events/e5270eb6-0f4b-4bae-82d6-0befecc23de1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Updated Meeting Title\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/events/e5270eb6-0f4b-4bae-82d6-0befecc23de1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"events",
+						"e5270eb6-0f4b-4bae-82d6-0befecc23de1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/events/e5270eb6-0f4b-4bae-82d6-0befecc23de1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Updated Meeting Title\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/events/e5270eb6-0f4b-4bae-82d6-0befecc23de1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"events",
+						"e5270eb6-0f4b-4bae-82d6-0befecc23de1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
