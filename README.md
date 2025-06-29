@@ -126,12 +126,20 @@ Export → Format: v2.1 → Save as postman_collection.json
 
 
 ✅ Example Commands (cURL)
-Create event
 curl -X POST http://127.0.0.1:5000/events \
   -H "Content-Type: application/json" \
-  -d '{"title":"Test","description":"Test event","start_time":"2025-07-01T10:00:00","end_time":"2025-07-01T11:00:00"}'
-View events
+  -d '{
+    "title": "Test",
+    "description": "Test event",
+    "start_time": "2025-07-01T10:00:00",
+    "end_time": "2025-07-01T11:00:00"
+  }'
+
+
+View all event 
+
 curl http://127.0.0.1:5000/events
+
 
 
 📧 Author
