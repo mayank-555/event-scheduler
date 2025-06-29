@@ -1,116 +1,146 @@
-# 🗓️ Event Scheduler System
+# 🗓️ Event Scheduler System with Email Reminders
 
-A simple Python Flask-based Event Scheduler backend that allows users to create, view, update, delete, and search events with persistent storage.
-
----
-
-# 🚀 Features
-
-- Create events
-- View events (sorted by start time)
-- Update existing events
-- Delete events
-- Search events by title/description
-- Persistent JSON storage
-- Postman collection included for testing
+A Python Flask-based Event Scheduler backend that allows users to create, view, update, delete, and search events with persistent storage and automated **email reminders** (including recurring events).
 
 ---
 
-# ⚙️ Tech Stack
+## 🚀 Features
+
+- ✅ Create, view, update, delete events
+- 🔍 Search events by title/description
+- 📁 Persistent JSON storage
+- 🔁 Recurring events (daily, weekly, monthly)
+- 📧 Email reminders sent 1 hour before event
+- 🌐 Postman collection included for testing
+
+---
+
+## ⚙️ Tech Stack
 
 - Python 3.x
 - Flask
+- `smtplib` + Gmail SMTP for email
 - JSON (for persistence)
 - Postman (for API testing)
+- `python-dotenv` (for email config)
 
 ---
 
-# 📦 Setup & Installation
+## 📦 Setup & Installation
 
-# Step 1: Clone the repository
+### Step 1: Clone the repository
+```bash
 git clone https://github.com/mayank-555/event-scheduler.git
 cd event-scheduler
-
-# Step 2: Create virtual environment
+Step 2: Create virtual environment
+bash
+Copy
+Edit
 python3 -m venv venv
-
-# Step 3: Activate virtual environment
+Step 3: Activate virtual environment
+bash
+Copy
+Edit
 source venv/bin/activate   # For Linux or MacOS
 # OR
 venv\Scripts\activate       # For Windows
+Step 4: Install dependencies
+bash
+Copy
+Edit
+pip install -r requirements.txt
+Step 5: Configure environment
+Create a .env file with:
 
-# Step 4: Install dependencies
-pip install Flask
-
-# Step 5: Run the application
+env
+Copy
+Edit
+SMTP_SERVER=smtp.gmail.com
+SMTP_PORT=587
+EMAIL_SENDER=your_email@gmail.com
+EMAIL_PASSWORD=your_app_password
+EMAIL_RECEIVER=your_email@gmail.com
+Step 6: Run the application
+bash
+Copy
+Edit
 python app.py
+App will start at: http://127.0.0.1:5000/
 
-# App will start at http://127.0.0.1:5000/
-
----
-
-# 📮 API Endpoints
-
-# 1. Create Event
+📮 API Endpoints
+1. Create Event
 POST /events
-Body (JSON):
-{
-  "title": "Meeting",
-  "description": "Project sync",
-  "start_time": "2025-06-30T14:00:00",
-  "end_time": "2025-06-30T15:00:00"
-}
 
-# 2. View All Events
+json
+Copy
+Edit
+{
+  "title": "Team Meeting",
+  "description": "Discuss Q3 goals",
+  "start_time": "2025-06-30T14:00:00",
+  "end_time": "2025-06-30T15:00:00",
+  "recurrence": "daily"   // Options: none, daily, weekly, monthly
+}
+2. View All Events
 GET /events
 
-# 3. Update Event
+3. Update Event
 PUT /events/<event_id>
-Body (JSON):
-{
-  "title": "Updated Meeting Title"
-}
 
-# 4. Delete Event
+json
+Copy
+Edit
+{
+  "title": "Updated Title"
+}
+4. Delete Event
 DELETE /events/<event_id>
 
-# 5. Search Event
+5. Search Events
 GET /events/search?query=meeting
 
----
+🔔 Reminders & Notifications
+Background thread checks events every minute
 
-# 📤 Postman Instructions
+Email sent 1 hour before start time
 
-# Step 1: Open Postman
-# Step 2: Go to Collections → New Collection → Name it "Event Scheduler Collection"
-# Step 3: Save all requests (POST, GET, PUT, DELETE, SEARCH) to the collection
-# Step 4: Export the collection → Format: v2.1 → Save the .json file for submission
+Supports recurring events
 
----
+🧪 Postman Instructions
+Open Postman
 
-# 📁 Project Structure
+Create a new Collection: Event Scheduler Collection
 
+Save all requests (POST, GET, PUT, DELETE, SEARCH)
+
+Export → Format: v2.1 → Save as postman_collection.json
+
+🗂 Project Structure
 .
-├── app.py               # Main Flask application
-├── utils.py             # Utility functions (load/save)
-├── events.json          # Persistent event data
-├── README.md            # This file
-└── postman_collection.json  # Exported collection (submit this)
+├── app.py                  # Main Flask app with reminder thread
+├── notifier.py             # Email sending logic (Gmail SMTP)
+├── utils.py                # Load/save JSON event data
+├── events.json             # Persistent event storage
+├── .env                    # Gmail SMTP credentials (keep secret!)
+├── requirements.txt        # Dependencies
+├── README.md               # Project documentation
+└── postman_collection.json # For testing API routes
 
----
 
-# ✅ Example Commands
-
-# Add an event (cURL)
+✅ Example Commands (cURL)
+Create event
+bash
+Copy
+Edit
 curl -X POST http://127.0.0.1:5000/events \
   -H "Content-Type: application/json" \
   -d '{"title":"Test","description":"Test event","start_time":"2025-07-01T10:00:00","end_time":"2025-07-01T11:00:00"}'
-
-# View all events
+View events
+bash
+Copy
+Edit
 curl http://127.0.0.1:5000/events
+📧 Author
+Mayank Gupta
+GitHub: @mayank-555
 
----
-
-# 📧 Author
-
-Mayank Gupta  
